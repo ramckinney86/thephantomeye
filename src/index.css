@@ -10,3 +10,21 @@
     @apply font-industrial bg-black text-white antialiased;
   }
 }
+
+/* src/index.css */
+
+@font-face {
+  font-family: 'FunGames';
+  src: url('./assets/fonts/Fun Games.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@theme {
+  --font-logo: "FunGames", sans-serif;
+}
+
+/* Optional: Create a specific utility if you aren't using the @theme block */
+.font-fun-games {
+  font-family: 'FunGames', sans-serif;
+}

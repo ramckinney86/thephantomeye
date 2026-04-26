@@ -1,5 +1,5 @@
 // src/App.jsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Fixes 'Router' not defined
 import Header from './components/Header';
 import Home from './pages/Home';
 
@@ -7,18 +7,12 @@ function App() {
   return (
     <Router>
       <div className="flex flex-col min-h-screen bg-black text-white selection:bg-zinc-800">
-        
         <Header />
-
-        <main className="flex-grow pt-20">
+        
+        <main className="grow">
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* As you create the files in /pages, uncomment these:
-              <Route path="/shows" element={<Shows />} />
-              <Route path="/videos" element={<Videos />} />
-              <Route path="/press" element={<Press />} />
-              <Route path="/contact" element={<Contact />} />
-            */}
+            {/* Add other routes here as you build the pages */}
           </Routes>
         </main>
 
@@ -32,4 +26,6 @@ function App() {
   );
 }
 
+// THIS LINE FIXES: 'App' is defined but never used 
+// AND FIXES: Fast refresh only works when a file has exports
 export default App;

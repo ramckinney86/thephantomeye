@@ -1,12 +1,15 @@
-/* src/index.css */
-@import "tailwindcss";
-
-@theme {
-  --font-industrial: "Special Elite", serif;
-}
-
-@layer base {
-  body {
-    @apply font-industrial bg-black text-white antialiased;
-  }
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        industrial: ['"Special Elite"', 'serif'],
+      },
+    },
+  },
+  plugins: [],
 }
