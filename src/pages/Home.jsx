@@ -2,7 +2,7 @@
 import { homeData } from '../data/home';
 
 const Home = () => {
-  const { hero, about } = homeData;
+  const { about } = homeData;
 
   return (
     <div className="flex flex-col">

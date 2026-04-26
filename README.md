@@ -1,5 +1,4 @@
-# Define the README content
-readme_content = """# THE PHANTOM EYE - Official Website
+## THE PHANTOM EYE - Official Website
 
 A high-performance, single-page application (SPA) built for the Brooklyn-based trio **THE PHANTOM EYE**. This site replaces the previous WordPress installation with a modern, "Headless" React architecture to achieve faster load times, improved security, and a "Tech-Noir" aesthetic.
 
