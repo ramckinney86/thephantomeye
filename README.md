@@ -1,16 +1,25 @@
-# React + Vite
+# Define the README content
+readme_content = """# THE PHANTOM EYE - Official Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A high-performance, single-page application (SPA) built for the Brooklyn-based trio **THE PHANTOM EYE**. This site replaces the previous WordPress installation with a modern, "Headless" React architecture to achieve faster load times, improved security, and a "Tech-Noir" aesthetic.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* **Framework:** [React 18](https://reactjs.org/)
+* **Build Tool:** [Vite](https://vitejs.dev/) (Lightning-fast HMR)
+* **Routing:** [React Router 6](https://reactrouter.com/)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/)
+* **Fonts:** [Special Elite](https://fonts.google.com/specimen/Special+Elite) (Industrial Typewriter Aesthetic)
 
-## React Compiler
+## 📂 Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The project follows a **Data-Driven Architecture**, separating site logic from content to allow for easy updates without touching JSX.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```text
+src/
+├── components/      # Global UI components (Header, Footer)
+├── data/            # Content "Source of Truth" (homeData.js, navigation.js)
+├── pages/           # Route-specific views (Home.jsx, Shows.jsx, etc.)
+├── App.jsx          # Main template shell & routing logic
+├── index.css        # Tailwind directives & global theme overrides
+└── main.jsx         # React entry point
