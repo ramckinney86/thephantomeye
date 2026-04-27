@@ -1,6 +1,7 @@
 // src/App.jsx
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // Fixes 'Router' not defined
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Home from './pages/Home';
 
 function App() {
@@ -16,11 +17,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer className="py-12 border-t decoration-highlight text-center">
-          <p className="text-[10px] text-zinc-600 uppercase tracking-[0.4em]">
-            © {new Date().getFullYear()} THE PHANTOM EYE
-          </p>
-        </footer>
+        <Footer />
       </div>
     </Router>
   );
