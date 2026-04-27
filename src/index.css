@@ -2,12 +2,19 @@
 @import "tailwindcss";
 
 @theme {
+  --font-logo: "FunGames", sans-serif;
   --font-industrial: "Special Elite", serif;
+  --color-highlight: #d775b1;
 }
 
 @layer base {
   body {
     @apply font-industrial bg-black text-white antialiased;
+  }
+  
+  /* Update the global footer or any horizontal rules */
+  footer {
+    @apply border-t border-highlight/50; /* Using 50% opacity for a subtle glow */
   }
 }
 
@@ -20,11 +27,8 @@
   font-style: normal;
 }
 
-@theme {
-  --font-logo: "FunGames", sans-serif;
-}
-
 /* Optional: Create a specific utility if you aren't using the @theme block */
 .font-fun-games {
   font-family: 'FunGames', sans-serif;
 }
+

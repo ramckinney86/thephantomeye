@@ -38,8 +38,10 @@ const Header = () => {
                   <NavLink 
                     to={item.path}
                     className={({ isActive }) => 
-                      `text-xs uppercase tracking-[0.2em] transition-colors duration-300 ${
-                        isActive ? 'text-white underline underline-offset-8' : 'text-zinc-500 hover:text-zinc-200'
+                      `text-[10px] uppercase tracking-[0.3em] transition-all duration-300 ${
+                        isActive 
+                          ? 'text-white underline decoration-highlight decoration-2 underline-offset-8' 
+                          : 'text-zinc-500 hover:text-highlight'
                       }`
                     }
                   >

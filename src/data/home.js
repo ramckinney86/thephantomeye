@@ -19,7 +19,7 @@ export const homeData = {
     ],
     lineup: [
       { name: "Pete Ross", role: "Guitars / Vocals" },
-      { name: "Larry Hundertmark", role: "Drums" },
+      { name: "Larry Hundertmark", role: "Drums / Lighting" },
       { name: "Rob McKinney", role: "Keyboards / Vocals / Bass" }
     ]
   },

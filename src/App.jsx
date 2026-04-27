@@ -16,7 +16,7 @@ function App() {
           </Routes>
         </main>
 
-        <footer className="py-12 border-t border-zinc-900 text-center">
+        <footer className="py-12 border-t decoration-highlight text-center">
           <p className="text-[10px] text-zinc-600 uppercase tracking-[0.4em]">
             © {new Date().getFullYear()} THE PHANTOM EYE
           </p>
@@ -26,6 +26,4 @@ function App() {
   );
 }
 
-// THIS LINE FIXES: 'App' is defined but never used 
-// AND FIXES: Fast refresh only works when a file has exports
 export default App;

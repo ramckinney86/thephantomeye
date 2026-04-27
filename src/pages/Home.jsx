@@ -6,33 +6,39 @@ const Home = () => {
 
   return (
     <div className="flex flex-col">
-      {/* HERO SECTION */}
       
-
-      {/* BIO SECTION */}
+      {/* BIO & LINEUP SECTION */}
       <section className="py-24 px-6 bg-black border-t border-zinc-900">
-        <div className="container mx-auto max-w-5xl grid md:grid-cols-2 gap-16">
-          <div>
-            <h2 className="text-3xl mb-8 underline decoration-zinc-800 underline-offset-8">
+        <div className="container mx-auto max-w-4xl">
+          
+          {/* FULL WIDTH TEXT AREA */}
+          <div className="mb-20">
+            <h2 className="text-3xl mb-10 underline decoration-highlight underline-offset-8 uppercase tracking-widest text-center">
               {about.title}
             </h2>
-            <div className="space-y-6">
+            <div className="space-y-8">
               {about.description.map((paragraph, index) => (
-                <p key={index} className="text-zinc-400 text-lg leading-relaxed">
+                <p key={index} className="text-zinc-400 text-lg md:text-xl leading-relaxed text-center max-w-3xl mx-auto">
                   {paragraph}
                 </p>
               ))}
             </div>
           </div>
 
-          <div className="space-y-4">
+          {/* 3 COLUMN LINEUP */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-16 border-t border-highlight/30">
             {about.lineup.map((member) => (
-              <div key={member.name} className="border-l border-zinc-800 pl-6 py-2">
-                <h3 className="text-zinc-200 text-lg">{member.name}</h3>
-                <p className="text-zinc-600 text-sm italic">{member.role}</p>
+              <div key={member.name} className="text-center group">
+                <h3 className="text-zinc-200 text-xl mb-1 group-hover:text-highlight transition-colors">
+                  {member.name}
+                </h3>
+                <p className="text-zinc-600 text-xs uppercase tracking-[0.3em] italic">
+                  {member.role}
+                </p>
               </div>
             ))}
           </div>
+          
         </div>
       </section>
     </div>
