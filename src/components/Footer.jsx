@@ -1,5 +1,6 @@
 // src/components/Footer.jsx
-import { FaInstagram, FaYoutube, FaSpotify, FaApple, FaBandcamp } from 'react-icons/fa';
+import Newsletter from './Newsletter';
+import { socialData } from '../data/socials';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -8,20 +9,15 @@ const Footer = () => {
     <footer className="bg-black text-zinc-400 py-16 border-t border-highlight/30">
       <div className="container mx-auto px-6 max-w-4xl flex flex-col items-center">
         
-        {/* SOCIAL LINKS */}
+        {/* SOCIAL LINKS - Now driven by data */}
         <ul className="flex space-x-8 mb-10">
-          {[
-            { Icon: FaInstagram, url: "https://www.instagram.com/the_phantom_eye/" },
-            { Icon: FaYoutube, url: "https://www.youtube.com/playlist?list=PLb8aGAqQkw-sH-GGjzxkcjc0hNgZPs0Ke" },
-            { Icon: FaSpotify, url: "https://open.spotify.com/artist/3tHRRcfndZ65xaKjpazGtA?si=1_lqKIC7SEuGDAy_phe3Gg" },
-            { Icon: FaApple, url: "https://music.apple.com/us/artist/the-phantom-eye/1574021580" },
-            { Icon: FaBandcamp, url: "https://phantomeye.bandcamp.com/" }
-          ].map((social, idx) => (
-            <li key={idx}>
+          {socialData.map((social) => (
+            <li key={social.name}>
               <a 
                 href={social.url} 
                 target="_blank" 
                 rel="noopener noreferrer"
+                aria-label={social.name}
                 className="text-2xl hover:text-highlight transition-colors duration-300 text-white"
               >
                 <social.Icon />
@@ -56,6 +52,8 @@ const Footer = () => {
             </button>
           </form>
         </div>
+
+        <Newsletter />
 
         {/* SITE INFO & LOGO */}
         <div className="flex flex-col items-center border-t border-zinc-900 pt-10 w-full text-white">
