@@ -20,8 +20,8 @@ const CustomForm = ({ subscribe, status, message }) => {
       <form onSubmit={handleSubmit} className="flex flex-col space-y-4">
         <input
           type="email"
-          placeholder="ENTER EMAIL FOR UPDATES"
-          className="bg-black border border-zinc-800 text-white p-4 font-industrial tracking-widest focus:border-highlight focus:outline-none transition-colors text-center uppercase"
+          placeholder="Enter Email"
+          className="bg-black border border-zinc-800 text-white p-4 font-industrial tracking-widest focus:border-highlight focus:outline-none transition-colors text-center uppercase placeholder:text-xs"
           onChange={(e) => setEmail(e.target.value)}
           value={inputValue}
           required
@@ -29,9 +29,9 @@ const CustomForm = ({ subscribe, status, message }) => {
         <button 
           type="submit"
           disabled={status === "sending"}
-          className="bg-zinc-950 text-highlight border border-highlight/30 py-4 tracking-[0.3em] font-bold hover:bg-highlight hover:text-black transition-all disabled:opacity-50"
+          className="bg-zinc-950 text-highlight border border-highlight/30 py-4 tracking-[0.3em] font-bold hover:bg-highlight hover:text-black transition-all disabled:opacity-50 uppercase"
         >
-          {status === "sending" ? "TRANSMITTING..." : "JOIN THE EYE"}
+          {status === "sending" ? "TRANSMITTING..." : "Join Mailing List"}
         </button>
       </form>
 

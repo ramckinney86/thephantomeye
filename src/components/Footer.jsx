@@ -36,8 +36,8 @@ const Footer = () => {
 
         {/* NEWSLETTER SIGNUP (Mailchimp Styled) */}
         <div className="w-full max-w-md text-center mb-16">
-          <h4 className="text-[10px] uppercase tracking-[0.4em] mb-4 text-white">Newsletter Signup</h4>
-          <form className="flex flex-col md:flex-row gap-2">
+          <Newsletter />
+          {/* <form className="flex flex-col md:flex-row gap-2">
             <input 
               type="email" 
               placeholder="YOUR EMAIL ADDRESS" 
@@ -50,10 +50,9 @@ const Footer = () => {
             >
               Sign Up
             </button>
-          </form>
+          </form> */}
         </div>
 
-        <Newsletter />
 
         {/* SITE INFO & LOGO */}
         <div className="flex flex-col items-center border-t border-zinc-900 pt-10 w-full text-white">

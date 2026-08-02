@@ -20,8 +20,8 @@ export const epkData = {
     { label: "Full Music Archive", url: "https://drive.google.com/uc?export=download&id=1xdb0hxDLSP6SkXCWLy8_0VEWwx7IJ1bq" }
   ],
   videos: [
-    { title: "Palindrome", id: "VIDEO_ID_1" }, // Replace with actual YouTube IDs
-    { title: "Circuit Rider", id: "VIDEO_ID_2" },
-    { title: "Polluted Heart", id: "VIDEO_ID_3" }
+    {title: 'Palindrome', id: 'QziDG7OUois', type: 'Music Video', description: 'Filmed and edited by Brett Kyle. Recorded at Studio G Brooklyn.'},
+    {title: 'Circuit Rider', id: 'RJDcQKGFAd8', type: 'Music Video', description: 'From the EP Cymatic Waves.'},
+    {title: 'Polluted Heart', id: '5X1yleux-mk', type: 'Music Video', description: 'Official video from the debut EP Chromesthesia.'},
   ]
 };
