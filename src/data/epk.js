@@ -16,8 +16,8 @@ export const epkData = {
     { name: "Larry Hundertmark", role: "Drums and Lighting Design" }
   ],
   downloads: [
-    { label: "High-Res Photos & Logos (2025)", url: "/downloads/The_Phantom_Eye_Press_Photos-2025.zip" },
-    { label: "Full Music Archive", url: "/downloads/The_Phantom_Eye_Music.zip" }
+    { label: "High-Res Photos & Logos", url: "https://drive.google.com/uc?export=download&id=16Q3PxBaoY8iFhynL5-7BgZ5pC5TltVAC" },
+    { label: "Full Music Archive", url: "https://drive.google.com/uc?export=download&id=1xdb0hxDLSP6SkXCWLy8_0VEWwx7IJ1bq" }
   ],
   videos: [
     { title: "Palindrome", id: "VIDEO_ID_1" }, // Replace with actual YouTube IDs
