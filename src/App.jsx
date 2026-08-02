@@ -7,6 +7,7 @@ import Shows from './pages/Shows';
 import Videos from './pages/Videos';
 import Contact from './pages/Contact';
 import Press from './pages/Press';
+import PressKit from './pages/PressKit';
 
 function App() {
   return (
@@ -21,7 +22,9 @@ function App() {
             <Route path="/videos" element={<Videos />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/press" element={<Press />} />
-            {/* Add other routes here as you build the pages */}
+            
+            {/* Hidden Route: Only accessible via direct URL /press-kit */}
+            <Route path="/epk" element={<PressKit />} />
           </Routes>
         </main>
 
